@@ -2,8 +2,10 @@ module.exports = {
   siteMetadata: {
     title: 'Ciera Aldred',
     description: 'A Portfolio',
+    siteUrl: 'https://inspiring-wiles-87e31b.netlify.com'
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
@@ -20,11 +22,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Ciera Aldred Photography',
+        short_name: 'CA Photos',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#524763',
+        theme_color: '#524763',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
@@ -45,6 +47,7 @@ module.exports = {
       }
     },
      'gatsby-transformer-remark',
+     `gatsby-plugin-netlify-cms`,
      `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
 }
